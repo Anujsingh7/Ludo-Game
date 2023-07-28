@@ -1,0 +1,57 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ludoGame</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Alkatra&family=Carter+One&family=Caveat&family=DynaPuff&family=Lobster&family=Open+Sans&family=Roboto&display=swap" rel="stylesheet">
+     <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>LudoGame</h1>
+        <div class="dice">
+            <p>Player 1</p>
+            <img src="dice6.png"  id="check1" alt="dice6">
+
+        </div>
+        <div class="dice">
+            <p>Player 2</p>
+            <img src="dice5.png" id="check2" alt="dice5">
+
+        </div>
+        <div>
+
+            <button onclick="playGame()">clickMe</button>
+        </div>
+    </div>
+
+    <script>
+     playGame=()=>{
+
+            const player1=Math.floor(Math.random()*6)+1;
+            const playdice=`dice${player1}.png`;
+            document.getElementById('check1').setAttribute('src',playdice);
+
+
+            const player2=Math.floor(Math.random()*6)+1;
+            const playdice2=`dice${player2}.png`;
+            document.getElementById('check2').setAttribute('src',playdice2);
+
+            if(player1>player2)
+            {
+                document.querySelector('h1').innerHTML="Player1 won :)";
+            }
+            else if(player1<player2)
+            {
+                document.querySelector('h1').innerHTML="Player2 won :)";
+            }
+            else {
+                
+                document.querySelector('h1').innerHTML="DRAW";
+            }
+        }
+    </script>
+</body>
+</html>

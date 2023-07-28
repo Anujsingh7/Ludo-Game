@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: rgb(105, 157, 190);
+    
+font-family: 'Alkatra', cursive;
+/* font-family: 'Carter One', cursive; */
+}
+
+.container{
+    width: 70%;
+    margin: auto;
+    text-align: center;
+    /* display: flex; */
+
+}
+.dice{
+    
+    text-align: center;
+    display: inline-block;
+}
+
+h1{
+    margin: 30px;
+    text-shadow: 2px 2px rgb(132, 223, 34);
+    font-size: 6rem;
+    color: yellow;
+}
+p{
+    font-size: 2rem;
+    color:#6200b8;
+    text-shadow: 1px 1px rgb(252, 192, 255);
+}
+
+button{
+    padding: 12px;
+    font-size: 1.5rem;
+     background-color: #9470b5;
+     color: white;
+     border: none;
+     border-radius: 8px;
+}
+button:hover{
+    cursor: pointer;
+}
+img{
+    /* padding: 15px; */
+    width: 70%;
+}
